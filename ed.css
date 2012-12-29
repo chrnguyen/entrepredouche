@@ -1,0 +1,170 @@
+/* CSS declarations go here */
+
+body{
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}
+
+h2{
+  font-weight:300;
+}
+
+strong{
+	font-weight:500;
+}
+
+#nav{
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 100000;
+	background-color: #eee;
+	width: 100%;
+}
+
+ul{
+  padding: 0;
+  list-style-type:none;
+}
+
+#nav li{
+  display:inline;
+  padding-right:4em;
+  margin:0;
+  font-size:1.2em;
+}
+
+a:link, a:visited{
+  color: #E41D1D;
+  text-decoration:none;
+}
+
+#nav a:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+#nav li:first-child{
+  padding-left:1em;
+  margin:0;
+  font-size: 1.5em;
+	color: #333;
+	
+}
+
+#support, #symptoms{
+	padding-top:3em;
+	display:block;
+}
+#about{
+	padding-top:3.5em;
+	display:block;
+}
+
+#aboutdiv, #symptomsdiv, #supportdiv{
+	padding-left: 1em;
+}
+
+#sort-symptoms ul{
+	padding: 0;
+}
+
+#sort-symptoms li{
+  display:inline;
+  padding-right:2em;
+  margin:0;
+}
+
+#sort-symptoms li:first-child{
+  font-size: 1.5em;
+	color: #000;
+	
+}
+
+li.potential, #add-symptom-text{
+	cursor:pointer;
+	color: #E41D1D;
+}
+
+#add-symptom-text{
+  padding: 0;
+  height:1.75em;
+}
+
+#add-symptom-form{
+  
+}
+
+input[type=text]{
+  padding-left:.2em;
+  border-style:none;
+  color:#fff;
+  background-color:#000;
+  width:15em;
+  font-size: 1em;
+  height:1.6em;
+}
+
+.close-button{
+  padding:0;
+  background:#ccc;
+  color:#777;
+  font-size:1em;
+  border:none;
+  height:1.7em;
+  width:1.2em;
+}
+
+.add-button{
+  padding:0;
+  background:#E41D1D;
+  color:#fff;
+  font-size: 1em;
+  font-weight:200;
+  border:none;
+  height:1.7em;
+  width:4em;
+}
+
+#symptom-error{
+  color:#E41D1D;
+}
+
+.symptom .name{
+  display: inline-block;
+  width: 20em;
+  font-size: 1.2em;
+  padding-top:.8em;
+  padding-bottom:.8em;
+}
+
+.vote_funny, .vote_true{
+  display: none;
+}
+
+.smiley{
+  font-family: 'Julius Sans One', sans-serif;
+
+}
+
+.symptom:hover .vote_funny, .symptom:hover .vote_true{
+  display: inline-block;
+  width: 3em;
+  text-align: center;
+  font-size: 1.3em;
+	font-weight: 300;
+  color: #777;
+  padding-top:.2em;
+  padding-bottom:.2em;
+  margin-right:2em;
+  margin-left:2em;
+}
+
+
+
+

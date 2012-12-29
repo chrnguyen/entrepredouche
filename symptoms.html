@@ -1,0 +1,48 @@
+
+<template name="leaderboard">
+	{{> sort_symptoms}}
+	{{> add_symptom}}
+  <div class="leaderboard">
+    {{#each symptoms}}
+      {{> symptom}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="sort_symptoms">
+	<div id="sortsymptomsdiv">
+		<ul id="sort-symptoms">
+		<li>symptoms</li>
+		<li>sorted by:</li>
+		{{#each sort}}
+			<li id="{{shortname}}" class="{{selected}}">{{nameifselected}}<span alt="{{name}}" class="smiley"> {{smiley}}</span></li>
+		{{/each}}
+	</ul></div>
+</template>
+
+<template name="add_symptom">
+  {{#if addingsymptom}}
+    <div id="add-symptom-form">
+      <input type="button" class="close-button" value="x">
+      <input id="new-symptom-name" type="text">
+      <input type="button" class="add-button" value="add">
+    </div>
+    {{#if validationerror}}
+      <div id="symptom-error">
+        {{validationerror}}
+      </div>
+    {{/if}}
+  {{else}}
+    <div id="add-symptom-text"><a>+add symptom</a></div>
+  {{/if}}
+
+</template>
+
+<template name="symptom">
+  <div class="symptom">
+    <span class="name">{{name}}</span>
+    <div class="vote_true">{{numvote_true}}<span class="smiley"> :)</span></div>
+    <div class="vote_funny">{{numvote_funny}}<span class="smiley"> :D</span></div>
+
+  </div>
+</template>
